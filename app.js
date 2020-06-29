@@ -67,11 +67,6 @@ app.use(errorLogger);
 
 // обработчики ошибок
 
-// ошибка при неправильном адресе в строке
-app.use('*', (req, res) => {
-  res.status(404).json({ message: 'Запрашиваемый ресурс не найден' });
-});
-
 // обработчик ошибок celebrate
 app.use(errors());
 
@@ -87,6 +82,13 @@ app.use((err, req, res, next) => {
         ? err.message : message,
     });
 });
+
+
+// ошибка при неправильном адресе в строке
+app.all('*', (req, res) => {
+  res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
+});
+
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
