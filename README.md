@@ -12,12 +12,12 @@
 ### Ссылки
 
 - Фронтенд проекта доступен по адресам:
-  - [mesto-updated.tk](https://projectmesto.site)
-  - [www.mesto-updated.tk](https://www.projectmesto.site) 
+  - [mesto-updated.tk](https://mesto-updated.tk)
+  - [www.mesto-updated.tk](https://www.mesto-updated.tk) 
 - Бэкенд проекта доступен по адресам: 
-  - [api.mesto-updated.tk](https://api.projectmesto.site)
-  - [www.api.mesto-updated.tk](https://www.api.projectmesto.site)
-  - [84.201.159.37](http://130.193.38.131/)
+  - [api.mesto-updated.tk](https://api.mesto-updated.tk)
+  - [www.api.mesto-updated.tk](https://www.api.mesto-updated.tk)
+  - [84.201.159.37](http://84.201.159.37/)
 
 ### ПО для выполнения задания:
 
