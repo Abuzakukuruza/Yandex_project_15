@@ -13,6 +13,7 @@ const { createUser, login } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const BadGatewayError = require('./errors/bad-gateway-err');
+const BadRequstError = require('./errors/bad-request-err');
 
 const { PORT = 3000 } = process.env;
 const app = express();
@@ -61,6 +62,11 @@ app.use(auth);
 app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
 
+// ошибка при неправильном адресе в строке
+app.use('*', () => {
+  throw new BadRequstError('Запрашиваемый ресурс не найден');
+});
+
 // подключение логгера ошибок
 app.use(errorLogger);
 
@@ -81,12 +87,6 @@ app.use((err, req, res, next) => {
       message: statusCode === 500
         ? err.message : message,
     });
-});
-
-
-// ошибка при неправильном адресе в строке
-app.all('*', (req, res) => {
-  res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
 });
 
 
