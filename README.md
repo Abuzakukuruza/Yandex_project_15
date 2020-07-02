@@ -1,6 +1,6 @@
 # Яндекс.Практикум
   
-## Проектная работа 15_v1.0.0
+## Проектная работа 15_v1.0.2
  
 ## Backend deployment
 
@@ -12,12 +12,12 @@
 ### Ссылки
 
 - Фронтенд проекта доступен по адресам:
-  - [projectmesto.site](https://projectmesto.site)
-  - [www.projectmesto.site](https://www.projectmesto.site) 
+  - [mesto-updated.tk](https://mesto-updated.tk)
+  - [www.mesto-updated.tk](https://www.mesto-updated.tk) 
 - Бэкенд проекта доступен по адресам: 
-  - [api.projectmesto.site](https://api.projectmesto.site)
-  - [www.api.projectmesto.site](https://www.api.projectmesto.site)
-  - [130.193.38.131](http://130.193.38.131/)
+  - [api.mesto-updated.tk](https://api.mesto-updated.tk)
+  - [www.api.mesto-updated.tk](https://www.api.mesto-updated.tk)
+  - [84.201.159.37](http://84.201.159.37/)
 
 ### ПО для выполнения задания:
 
