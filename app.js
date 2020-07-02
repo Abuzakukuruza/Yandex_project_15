@@ -63,8 +63,7 @@ app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
 
 // ошибка при неправильном адресе в строке
-app.use('/', router);
-app.use('*', (req, res) => {
+app.use('*', () => {
   throw new BadRequstError('Запрашиваемый ресурс не найден');
 });
 
